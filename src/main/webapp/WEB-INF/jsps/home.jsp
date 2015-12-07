@@ -9,5 +9,7 @@
 <%@include file="header.jsp" %>
 	<h1 align="center" style="color:cyan">Welcome to IAgri</h1>
 	<marquee  style="color:red">Web page under development</marquee>
+	
+	<a  href="weather" ><img src="resources/images/weather.gif" /></a>
 </body>
 </html>

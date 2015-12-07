@@ -12,4 +12,10 @@ public class HomeController {
 
 		return "home";
 	}
+	
+	@RequestMapping("/weather")
+	public String openWeather(Model model) {
+
+		return "weather";
+	}
 }
