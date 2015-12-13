@@ -11,7 +11,8 @@ xmlns:context="http://www.springframework.org/schema/context"
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 	<context:component-scan base-package="org.tcs.iagri.controller" />
-
+	<mvc:annotation-driven />
+	<mvc:resources mapping="/resources/**" location="/resources/" />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -20,5 +21,5 @@ xmlns:context="http://www.springframework.org/schema/context"
 		<property name="prefix" value="/WEB-INF/jsps/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-<!-- 	<mvc:resources mapping="/resources/**" location="/resources/" /> -->
+
 </beans>
