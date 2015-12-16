@@ -1,0 +1,148 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  position:static;
+  left:auto;
+  width:1030px;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u0 {
+  position:absolute;
+  left:0px;
+  top:-8px;
+  width:1030px;
+  height:1318px;
+}
+#u0_img {
+  position:absolute;
+  left:-2px;
+  top:-2px;
+  width:1040px;
+  height:1328px;
+}
+#u1 {
+  position:absolute;
+  left:2px;
+  top:651px;
+  width:1026px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u2 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1030px;
+  height:60px;
+  opacity:0.400000005960464;
+}
+#u2_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1030px;
+  height:60px;
+}
+#u3 {
+  position:absolute;
+  left:2px;
+  top:22px;
+  width:1026px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u4 {
+  position:absolute;
+  left:64px;
+  top:6px;
+  width:82px;
+  height:45px;
+  font-family:'Lobster 1.3 Bold', 'Lobster 1.3';
+  font-weight:700;
+  font-style:normal;
+  font-size:36px;
+  color:#FFFFFF;
+}
+#u4_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:82px;
+  height:45px;
+}
+#u5 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:82px;
+  white-space:nowrap;
+}
+#u6 {
+  position:absolute;
+  left:65px;
+  top:290px;
+  width:900px;
+  height:1020px;
+}
+#u6_img {
+  position:absolute;
+  left:-2px;
+  top:-2px;
+  width:910px;
+  height:1030px;
+}
+#u7 {
+  position:absolute;
+  left:2px;
+  top:502px;
+  width:896px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u8 {
+  position:absolute;
+  left:0px;
+  top:59px;
+  width:1030px;
+  height:231px;
+}
+#u8_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1030px;
+  height:231px;
+}
+#u9 {
+  position:absolute;
+  left:2px;
+  top:108px;
+  width:1026px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+body.a {  background-color:rgba(255, 255, 255, 1);
+  background-image:none;
+  position:static;
+  left:auto;
+  width:1030px;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#u0.a {
+}
+#u2.a {
+}
+#u4.a {
+}
+#u6.a {
+}
+#u8.a {
+}

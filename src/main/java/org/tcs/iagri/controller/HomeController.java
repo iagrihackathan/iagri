@@ -18,4 +18,28 @@ public class HomeController {
 
 		return "weather";
 	}
+	@RequestMapping("/connect")
+	public String openConnect(Model model) {
+
+		return "connect";
+		
+		
+	}
+	@RequestMapping("/market")
+	public String openMarket(Model model) {
+
+		return "market";
+		
+		
+	}
+	
+	@RequestMapping("/farmWiki")
+	public String openfarmWiki(Model model) {
+
+		return "farmWiki";
+		
+		
+	}
+	
+	
 }

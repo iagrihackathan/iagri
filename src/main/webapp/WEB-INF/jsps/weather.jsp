@@ -54,28 +54,75 @@ body {
 	background-position-y: inherit;
 	background-attachment: fixed;
 }
+
+#zipCodeModal {
+	display: none;
+	width: 70%;
+	!
+	importnat;
+}
+
+.ax_shape {
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	color: #333333;
+	text-align: center;
+	line-height: normal;
+	width: 100%;
+	height: 66px;
+	background-color: black;
+}
 </style>
 <title>IAgri</title>
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script type="text/javascript"
 	src="/iagri/resources/scripts/weather.ready.js"></script>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css"/>
 
 <script>
 	$(document).ready(function() {
+		var lattitude = "";
+		var longitude = "";
 		var options = {
 			enableHighAccuracy : true,
 			timeout : 5000,
 			maximumAge : 0
 		};
-		var lattitude = "";
-		var longitude = "";
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(function(position) {
 				lattitude = position.coords.latitude;
 				longitude = position.coords.longitude;
-				console.log(lattitude);
-				console.log(longitude);
+// 				alert(lattitude + "1")
+// 				alert(position.coords.latitude + "2")
+			}, function() {
+				alert('error')
+			}, options);
+		} else {
+			alert("Please enter zip code")
+		}
+
+		if (lattitude == "" || longitude == "") {
+			// 			alert('hi')
+			var dialog=$("#zipCodeModal").dialog({
+				resizable : false,
+				height : 300,
+				width : 600,
+				modal : true
+			});
+			$('#zipCode').keyup(function() {
+				var cs = $(this).val().length;
+				// 			    alert(cs)
+				// 			    $('#characters').text(cs);
+				alert(dialog)
+				if (cs == 5) {
+					 $(document).remove(dialog);
+				}
 			});
 		}
 
@@ -87,6 +134,16 @@ body {
 </script>
 </head>
 <body>
+	<div id="u8" class="ax_shape">
+		<!--         <img id="u8_img" class="img " src="resources/images/weather_report/u8.png"> -->
+		<!-- Unnamed () -->
+		<div id="u9" class="text"
+			style="top: 30px; transform-origin: 513px 0px 0px;">
+			<p>
+				<span></span>
+			</p>
+		</div>
+	</div>
 	<div id="temperature"
 		style="float: left; text-align: center; height: 100%; width: 50%; background-position: 100% 100%;">
 		<table align="center">
@@ -118,11 +175,12 @@ body {
 			<tr>
 		</table>
 	</div>
-	<div id="imageDiv" style="float: right; height: 100%;width:50%;background-position: 100% 100%">
-	
-	<img alt="" src="" id="statusImage">
-	</div>
+	<div id="imageDiv"
+		style="float: right; height: 100%; width: 50%; background-position: 100% 100%">
 
+		<img alt="" src="" id="statusImage">
+	</div>
+	<br />
 	<div
 		style="float: left; text-align: center; height: 100%; width: 50%; background-position: 100% 100%;">
 		<table id="dayForecastTable" class="weathersTable">
@@ -167,6 +225,15 @@ body {
 	<div id="monthDataDiv"
 		style="float: right; text-align: center; height: 100%; width: 50%; background-position: 100% 100%;">
 
+	</div>
+
+
+	<div id="zipCodeModal">
+		<table>
+			<tr style="width: 60%; text-align: center;">
+				<td><h1>Enter your ZIP code:</h1></td>
+				<td><input type="text" id="zipCode" /></td>
+		</table>
 	</div>
 
 </body>

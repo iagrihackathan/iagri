@@ -1,6 +1,6 @@
 var weather = [];
-var lattitude = "";
-var longitude = "";
+var globalLattitude = "";
+var globalLongitude = "";
 /*
  * weather.getLocation = function() { if (navigator.geolocation) {
  * navigator.geolocation.getCurrentPosition(function(position) {
@@ -14,6 +14,21 @@ var options = {
 	maximumAge : 0
 };
 
+/*weather.coordinates = function() {
+	var options = {
+		enableHighAccuracy : true,
+		timeout : 5000,
+		maximumAge : 0
+	};
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+			globalLattitude = position.coords.latitude;
+			globalLongitude = position.coords.longitude;
+			alert(globalLattitude+" in")
+		})
+	}
+
+}*/
 weather.currentData = function() {
 	var options = {
 		enableHighAccuracy : true,
@@ -24,8 +39,13 @@ weather.currentData = function() {
 		navigator.geolocation
 				.getCurrentPosition(
 						function(position) {
-							lattitude = position.coords.latitude;
-							longitude = position.coords.longitude;
+							var lattitude = position.coords.latitude;
+							var longitude = position.coords.longitude;
+						if(!lattitude||lattitude=="")
+							{
+							alert('hi')
+							$("#zipCodeModal").dialog();
+							}
 							$
 									.ajax({
 										// url :
@@ -192,8 +212,8 @@ weather.monthData = function() {
 	if (navigator.geolocation) {
 		navigator.geolocation
 				.getCurrentPosition(function(position) {
-					lattitude = position.coords.latitude;
-					longitude = position.coords.longitude;
+					var lattitude = position.coords.latitude;
+					var longitude = position.coords.longitude;
 
 					$
 							.ajax({
@@ -231,7 +251,8 @@ weather.monthData = function() {
 									}
 									table += "</table>";
 									$("#monthDataDiv").html(table);
-									$("#monthDataDiv>table").addClass("monthDataDiv");
+									$("#monthDataDiv>table").addClass(
+											"monthDataDiv");
 								}
 							});
 				});
