@@ -1,6 +1,5 @@
 var weather = [];
-var globalLattitude = "";
-var globalLongitude = "";
+
 /*
  * weather.getLocation = function() { if (navigator.geolocation) {
  * navigator.geolocation.getCurrentPosition(function(position) {
@@ -96,10 +95,10 @@ weather.currentData = function() {
 																"background-image",
 																"url(http://www.photos-public-domain.com/wp-content/uploads/2012/04/cloudy-overcast-sky.jpg)");
 												status = "Cloudy";
-												if (hours > 6 && hours <= 6) {
-													statusImage = "../resources/images/weather_report/Weather Icons/Cloudy_night_256.jpg";
+												if (hours > 6 && hours <= 18) {
+													statusImage = "../resources/images/weather_report/Weather_Icons/Cloudy_night_256.png";
 												} else {
-													statusImage = "../resources/images/weather_report/Weather Icons/Cloudy_sunny_256.jpg";
+													statusImage = "../resources/images/weather_report/Weather_Icons/Cloudy_sunny_256.png";
 												}
 
 											} else if (result.weather[0].main == "Sunny"
@@ -110,10 +109,10 @@ weather.currentData = function() {
 																"url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/bg_weather_sunny_day.jpg)");
 												status = "Sunny";
 
-												if (hours > 6 && hours <= 6) {
-													statusImage = "../resources/images/weather_report/Weather Icons/Sunny_256.jpg";
+												if (hours > 6 && hours <= 18) {
+													statusImage = "../resources/images/weather_report/Weather_Icons/Sunny_256.png";
 												} else {
-													statusImage = "../resources/images/weather_report/Clear_Night.jpg";
+													statusImage = "../resources/images/weather_report/Clear_Night.png";
 												}
 											} else if (result.weather[0].main == "Rain") {
 												$('body')
@@ -121,10 +120,10 @@ weather.currentData = function() {
 																"background-image",
 																"url(http://images4.alphacoders.com/831/83196.jpg)");
 												status = "Raining";
-												if (hours > 6 && hours <= 6) {
-													statusImage = "../resources/images/weather_report/Weather Icons/Rainy_morning_256.jpg";
+												if (hours > 6 && hours <= 18) {
+													statusImage = "../resources/images/weather_report/Weather_Icons/Rainy_morning_256.png";
 												} else {
-													statusImage = "../resources/images/weather_report/Weather Icons/Rainy_256.png";
+													statusImage = "../resources/images/weather_report/Weather_Icons/Rainy_256.png";
 												}
 											} else if (result.weather[0].main == "Fog"
 													|| result.weather[0].main == "Mist") {
@@ -133,7 +132,7 @@ weather.currentData = function() {
 																"background-image",
 																"url(http://www.hdwallpapersnew.net/wp-content/uploads/2014/10/fog-desktop-wallpaper-for-background-wide-free.jpg)");
 												status = "Fog";
-												statusImage = "../resources/images/weather_report/Fog.jpg";
+												statusImage = "../resources/images/weather_report/Fog.png";
 											}
 											$('#statusImage').attr("src",
 													statusImage);

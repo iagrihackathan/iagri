@@ -96,8 +96,10 @@ body {
 		};
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(function(position) {
-				lattitude = position.coords.latitude;
-				longitude = position.coords.longitude;
+				weather.globalLattitude = position.coords.latitude;
+				weather.globalLongitude=position.coords.longitude;
+// 				longitude = position.coords.longitude;
+// 				alert(position.coords.latitude)
 // 				alert(lattitude + "1")
 // 				alert(position.coords.latitude + "2")
 			}, function() {
@@ -107,7 +109,7 @@ body {
 			alert("Please enter zip code")
 		}
 
-		if (lattitude == "" || longitude == "") {
+		if (weather.globalLattitude == "" || weather.globalLongitude == "") {
 			// 			alert('hi')
 			var dialog=$("#zipCodeModal").dialog({
 				resizable : false,
