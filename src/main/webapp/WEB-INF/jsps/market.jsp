@@ -13,11 +13,56 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
+  <link  rel="stylesheet" href="/iagri/resources/css/common.css">
       
    </head>
 	
   </head>
 <body>
+<div id="u8" class="ax_shape">
+		<!--         <img id="u8_img" class="img " src="resources/images/weather_report/u8.png"> -->
+		<!-- Unnamed () -->
+		<table>
+			<tr><td style="width:40%;text-align: left" ><div id="u91" class="text">
+          <span class="logo">iAgri</span>
+         
+        </div>
+        <div style="font-style: italic; font-weight: bold;color:green"> Decision for Nature</div>
+        </td>
+				<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u60.png"> <figcaption>
+						<span class="class="linkText" ">Weather Report</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/farmWiki"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u56.png"> <figcaption>
+						<span class="class="linkText" ">Farm Wiki</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u64.png"> <figcaption>
+						<span class="class="linkText" ">Buy or Sell</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u68.png"> <figcaption>
+						<span class="class="linkText" ">Policies</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u52.png"> <figcaption>
+						<span class="class="linkText" ">Advisory Board</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/connect"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u74.png"> <figcaption>
+						<span class="class="linkText" ">Connect</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u50.png"> <figcaption>
+						<span class="class="linkText" ">Market Rates</span></figcaption> </figure></td>
+			</tr>
+		</table>
+
+		<!-- Unnamed () -->
+		<!--         <div id="u61" class="text" style="top: 30px; transform-origin: 28.5px 0.5px 0px;"> -->
+		<!--           <p><span></span></p> -->
+	</div>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <script type = "text/javascript" language = "javascript">
 

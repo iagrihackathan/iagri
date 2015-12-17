@@ -276,7 +276,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u50" class="ax_image">
-        <img id="u50_img" class="img " src="resources/images/home/u50.png"/>
+     <a href="/iagri/home/market" > <img id="u50_img" class="img " src="resources/images/home/u50.png"/></a>
         <!-- Unnamed () -->
         <div id="u51" class="text">
           <p><span></span></p>
@@ -285,7 +285,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u52" class="ax_image">
-        <img id="u52_img" class="img " src="resources/images/home/u52.png"/>
+ <a href="/iagri/home/weather/advisoryBoard" >    <img id="u52_img" class="img " src="resources/images/home/u52.png"/></a>
         <!-- Unnamed () -->
         <div id="u53" class="text">
           <p><span></span></p>
@@ -303,7 +303,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u56" class="ax_image">
-        <img id="u56_img" class="img " src="resources/images/home/u56.png"/>
+    <a href="/iagri/home/farmWiki" >   <img id="u56_img" class="img " src="resources/images/home/u56.png"/></a>
         <!-- Unnamed () -->
         <div id="u57" class="text">
           <p><span></span></p>
@@ -321,7 +321,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u60" class="ax_image">
-        <img id="u60_img" class="img " src="resources/images/home/u60.png"/>
+    <a href="/iagri/home/weather"   > <img id="u60_img"  class="img " src="resources/images/home/u60.png"/></a>
         <!-- Unnamed () -->
         <div id="u61" class="text">
           <p><span></span></p>
@@ -357,7 +357,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u68" class="ax_image">
-        <img id="u68_img" class="img " src="resources/images/home/u68.png"/>
+   <a href="/iagri/home/weather">  <img id="u68_img" class="img " src="resources/images/home/u68.png"/></a>
         <!-- Unnamed () -->
         <div id="u69" class="text">
           <p><span></span></p>
@@ -384,7 +384,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u74" class="ax_image">
-        <img id="u74_img" class="img " src="resources/images/home/u74.png"/>
+       <a href="/iagri/home/connect"> <img id="u74_img" class="img " src="resources/images/home/u74.png"/></a>
         <!-- Unnamed () -->
         <div id="u75" class="text">
           <p><span></span></p>

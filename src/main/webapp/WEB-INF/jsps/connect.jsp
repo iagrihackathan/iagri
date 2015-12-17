@@ -14,6 +14,7 @@
 <link href="data/styles.css" type="text/css" rel="stylesheet" />
 <link href="../resources/files/connect/styles.css" type="text/css"
 	rel="stylesheet" />
+	<link  rel="stylesheet" href="/iagri/resources/css/common.css">
 <script src="../resources/scripts/jquery-1.7.1.min.js"></script>
 <script src="../resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
 <script src="../resources/scripts/axure/axQuery.js"></script>
@@ -67,7 +68,51 @@
 
 </head>
 <body>
+<div id="u8" class="ax_shape">
+		<!--         <img id="u8_img" class="img " src="resources/images/weather_report/u8.png"> -->
+		<!-- Unnamed () -->
+		<table>
+			<tr><td style="width:40%;text-align: left" ><div id="u91" class="text">
+          <span class="logo">iAgri</span>
+         
+        </div>
+        <div style="font-style: italic; font-weight: bold;color:green"> Decision for Nature</div>
+        </td>
+				<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u60.png"> <figcaption>
+						<span class="class="linkText" ">Weather Report</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/farmWiki"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u56.png"> <figcaption>
+						<span class="class="linkText" ">Farm Wiki</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u64.png"> <figcaption>
+						<span class="class="linkText" ">Buy or Sell</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u68.png"> <figcaption>
+						<span class="class="linkText" ">Policies</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u52.png"> <figcaption>
+						<span class="class="linkText" ">Advisory Board</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/connect"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u74.png"> <figcaption>
+						<span class="class="linkText" ">Connect</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/market"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u50.png"> <figcaption>
+						<span class="class="linkText" ">Market Rates</span></figcaption> </figure></a></td>
+			</tr>
+		</table>
 
+		<!-- Unnamed () -->
+		<!--         <div id="u61" class="text" style="top: 30px; transform-origin: 28.5px 0.5px 0px;"> -->
+		<!--           <p><span></span></p> -->
+	</div>
 	<div id="fb-root"></div>
 	<script>
 		window.fbAsyncInit = function() {

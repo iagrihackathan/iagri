@@ -3,7 +3,15 @@
 <html>
 
 <head>
+
 <style type="text/css">
+.ui-dialog-titlebar, .ui-widget-header {
+	background: none !important;
+	background-color: #75850D !important;
+	background-image: none;
+	color: #000;
+}
+
 .cityName {
 	font-size: x-large;
 	color: blue;
@@ -50,9 +58,10 @@
 
 body {
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 	background-position-y: inherit;
 	background-attachment: fixed;
+	filter: brightness(50%);
 }
 
 #zipCodeModal {
@@ -62,17 +71,22 @@ body {
 	importnat;
 }
 
-.ax_shape {
-	font-family: 'Arial Regular', 'Arial';
+
+
+.notification{
+font-family: 'Arial Regular', 'Arial';
 	font-weight: 400;
 	font-style: normal;
 	font-size: 13px;
 	color: #333333;
 	text-align: center;
 	line-height: normal;
-	width: 100%;
-	height: 66px;
-	background-color: black;
+	width: 50%;
+	height: 60px;
+	background-color: #FCE7AC;
+    border: 7px solid #095939;
+    
+
 }
 </style>
 <title>IAgri</title>
@@ -83,52 +97,11 @@ body {
 	src="/iagri/resources/scripts/weather.ready.js"></script>
 <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css"/>
-
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<link  rel="stylesheet" href="/iagri/resources/css/common.css">
 <script>
 	$(document).ready(function() {
-		var lattitude = "";
-		var longitude = "";
-		var options = {
-			enableHighAccuracy : true,
-			timeout : 5000,
-			maximumAge : 0
-		};
-		if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(function(position) {
-				weather.globalLattitude = position.coords.latitude;
-				weather.globalLongitude=position.coords.longitude;
-// 				longitude = position.coords.longitude;
-// 				alert(position.coords.latitude)
-// 				alert(lattitude + "1")
-// 				alert(position.coords.latitude + "2")
-			}, function() {
-				alert('error')
-			}, options);
-		} else {
-			alert("Please enter zip code")
-		}
 
-		if (weather.globalLattitude == "" || weather.globalLongitude == "") {
-			// 			alert('hi')
-			var dialog=$("#zipCodeModal").dialog({
-				resizable : false,
-				height : 300,
-				width : 600,
-				modal : true
-			});
-			$('#zipCode').keyup(function() {
-				var cs = $(this).val().length;
-				// 			    alert(cs)
-				// 			    $('#characters').text(cs);
-				alert(dialog)
-				if (cs == 5) {
-					 $(document).remove(dialog);
-				}
-			});
-		}
-
-		// 		weather.getLocation();
 		weather.currentData();
 		weather.fiveDaysData();
 		weather.monthData();
@@ -139,12 +112,46 @@ body {
 	<div id="u8" class="ax_shape">
 		<!--         <img id="u8_img" class="img " src="resources/images/weather_report/u8.png"> -->
 		<!-- Unnamed () -->
-		<div id="u9" class="text"
-			style="top: 30px; transform-origin: 513px 0px 0px;">
-			<p>
-				<span></span>
-			</p>
-		</div>
+		<table>
+			<tr><td style="width:40%;text-align: left" ><div id="u91" class="text">
+          <span class="logo">iAgri</span>
+         
+        </div>
+        <div style="font-style: italic; font-weight: bold;color:green"> Decision for Nature</div>
+        </td>
+				<td style="vertical-align: top; text-align: top;"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u60.png"> <figcaption>
+						<span class="class="linkText" ">Weather Report</span></figcaption> </figure></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/farmWiki"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u56.png"> <figcaption>
+						<span class="class="linkText" ">Farm Wiki</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/buyorsell"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u64.png"> <figcaption>
+						<span class="class="linkText" ">Buy or Sell</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u68.png"> <figcaption>
+						<span class="class="linkText" ">Policies</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/weather"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u52.png"> <figcaption>
+						<span class="class="linkText" ">Advisory Board</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/connect"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u74.png"> <figcaption>
+						<span class="class="linkText" ">Connect</span></figcaption> </figure></a></td>
+						<td style="vertical-align: top; text-align: top;"><a
+					href="/iagri/home/market"> <figure> <img id="u60_img"
+							class="linkImage" src="resources/images/home/u50.png"> <figcaption>
+						<span class="class="linkText" ">Market Rates</span></figcaption> </figure></a></td>
+			</tr>
+		</table>
+
+		<!-- Unnamed () -->
+		<!--         <div id="u61" class="text" style="top: 30px; transform-origin: 28.5px 0.5px 0px;"> -->
+		<!--           <p><span></span></p> -->
 	</div>
 	<div id="temperature"
 		style="float: left; text-align: center; height: 100%; width: 50%; background-position: 100% 100%;">
@@ -165,22 +172,26 @@ body {
 			</tr>
 			<tr>
 				<td><span
-					style="font-weight: bold; font-size: 40px; color: #ff0000;">Minimum:</span><span
+					style="font-weight: bold; font-size: 40px; color: #402B03;">Minimum:</span><span
 					id="minimum"
-					style="font-weight: bold; font-size: 40px; color: #ff0000;"></span><sup
-					style="font-size: 20px; color: #ff0000;">&#8451;</sup></td>
+					style="font-weight: bold; font-size: 40px; color: #402B03;"></span><sup
+					style="font-size: 20px; color: #402B03;">&#8451;</sup></td>
 				<td><span
-					style="font-weight: bold; font-size: 40px; color: #ff0000;">Maximum:</span><span
+					style="font-weight: bold; font-size: 40px; color: #402B03;">Maximum:</span><span
 					id="maximum"
-					style="font-weight: bold; font-size: 40px; color: #ff0000;"></span><sup
-					style="font-size: 20px; color: #ff0000;">&#8451;</sup></td>
+					style="font-weight: bold; font-size: 40px; color: #402B03;"></span><sup
+					style="font-size: 20px; color: #402B03;">&#8451;</sup></td>
 			<tr>
-		</table>
+				</ta
+		ble>
 	</div>
 	<div id="imageDiv"
 		style="float: right; height: 100%; width: 50%; background-position: 100% 100%">
 
 		<img alt="" src="" id="statusImage">
+	</div>
+	<div class="notification">
+	<h3 style="font-style: italic;">There is no rain for the next <span id="rainDays"></span> days</h3>
 	</div>
 	<br />
 	<div
@@ -200,6 +211,8 @@ body {
 				<td></td>
 
 			</tr>
+
+
 
 			<tr class="weatherRow">
 				<td class="weatherData"><span class="time" id="time2"></span></td>
@@ -224,8 +237,7 @@ body {
 
 		</table>
 	</div>
-	<div id="monthDataDiv"
-		style="float: right; text-align: center; height: 100%; width: 50%; background-position: 100% 100%;">
+	<div id="monthDataDiv" style="float: right; text-align: center; height: 100%; width: 50%; background-position: 100% 100%;">
 
 	</div>
 
@@ -233,7 +245,7 @@ body {
 	<div id="zipCodeModal">
 		<table>
 			<tr style="width: 60%; text-align: center;">
-				<td><h1>Enter your ZIP code:</h1></td>
+				<td><h1>Enter Pin code:</h1></td>
 				<td><input type="text" id="zipCode" /></td>
 		</table>
 	</div>
