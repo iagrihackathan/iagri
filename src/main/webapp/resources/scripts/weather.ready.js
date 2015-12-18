@@ -53,7 +53,7 @@ weather.currentData = function() {
 															Math
 																	.round(result.main.temp_max));
 											var city = result.name;
-											$("#city").text(city);
+											$("#city").text("Bloomington");
 											var status = "";
 
 											var iconImgSrc = "http://openweathermap.org/img/w/"

@@ -77,23 +77,23 @@
       </div>
 
       <!-- Unnamed (Shape) -->
-      <div id="u6" class="ax_h1">
+     <!--  <div id="u6" class="ax_h1">
         <img id="u6_img" class="img " src="resources/images/transparent.gif"/>
-        <!-- Unnamed () -->
+        Unnamed ()
         <div id="u7" class="text">
           <p><span>Connect Around You </span></p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Unnamed (Shape) -->
-      <div id="u8" class="ax_h1">
+   <!--    <div id="u8" class="ax_h1">
         <img id="u8_img" class="img " src="resources/images/transparent.gif"/>
-        <!-- Unnamed () -->
+        Unnamed ()
         <div id="u9" class="text">
           <p><span>Know More</span></p>
         </div>
       </div>
-
+ -->
       <!-- Unnamed (Image) -->
       <div id="u10" class="ax_image">
         <img id="u10_img" class="img " src="resources/images/home/u10.png"/>
@@ -122,22 +122,22 @@
       </div>
 
       <!-- Unnamed (Image) -->
-      <div id="u16" class="ax_image">
+      <!-- <div id="u16" class="ax_image">
         <img id="u16_img" class="img " src="resources/images/home/u16.png"/>
-        <!-- Unnamed () -->
+        Unnamed ()
         <div id="u17" class="text">
           <p><span></span></p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Unnamed (Image) -->
-      <div id="u18" class="ax_image">
+    <!--   <div id="u18" class="ax_image">
         <img id="u18_img" class="img " src="resources/images/home/u18.png"/>
-        <!-- Unnamed () -->
+        Unnamed ()
         <div id="u19" class="text">
           <p><span></span></p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Unnamed (Shape) -->
       <div id="u20" class="ax_shape">

@@ -40,6 +40,14 @@ public class HomeController {
 		
 		
 	}
+
+	@RequestMapping("/buyorsell")
+	public String openBuyOrSell(Model model) {
+
+		return "buyOrSell";
+		
+		
+	}
 	
 	
 }

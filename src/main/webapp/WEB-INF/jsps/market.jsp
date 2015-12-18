@@ -139,6 +139,8 @@ var findCommoditiesString = "http://api.dataweave.in/v1/commodities/findByCommod
         
       </script>
 <form id="marketsForm">
+
+<h1>Market Rates</h1><br/>
 Commodities:<select id='dropDownList' name='Commodities' >
 <option> Choose a Commodity </option>
 </select>
